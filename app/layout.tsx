@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Johnson's Tiling | Professional Tile Installation – Western MA",
+  title: "Johnson Tiling | Professional Tile Installation – Western MA",
   description:
     'Expert tile installation in Western Massachusetts. Bathrooms, kitchens, floors, and custom tile work by Corey Johnson. Call (413) 512-1788 for a free estimate.',
 }

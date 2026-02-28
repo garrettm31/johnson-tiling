@@ -1,0 +1,59 @@
+<svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Flat-top hexagon helper (r=65):
+    Points: (cx+65,cy), (cx+32.5,cy+56.3), (cx-32.5,cy+56.3),
+            (cx-65,cy), (cx-32.5,cy-56.3), (cx+32.5,cy-56.3)
+  -->
+
+  <!-- Top hex — center (200, 95) -->
+  <polygon
+    points="265,95 232.5,151.3 167.5,151.3 135,95 167.5,38.7 232.5,38.7"
+    fill="none" stroke="#9aacb8" stroke-width="10" stroke-linejoin="round"
+  />
+
+  <!-- Left hex — center (85, 195) -->
+  <polygon
+    points="150,195 117.5,251.3 52.5,251.3 20,195 52.5,138.7 117.5,138.7"
+    fill="none" stroke="#9aacb8" stroke-width="10" stroke-linejoin="round"
+  />
+
+  <!-- Center hex — center (200, 195) -->
+  <polygon
+    points="265,195 232.5,251.3 167.5,251.3 135,195 167.5,138.7 232.5,138.7"
+    fill="none" stroke="#9aacb8" stroke-width="10" stroke-linejoin="round"
+  />
+
+  <!-- Right hex — center (315, 195) -->
+  <polygon
+    points="380,195 347.5,251.3 282.5,251.3 250,195 282.5,138.7 347.5,138.7"
+    fill="none" stroke="#9aacb8" stroke-width="10" stroke-linejoin="round"
+  />
+
+  <!-- Bottom hex — center (200, 295) -->
+  <polygon
+    points="265,295 232.5,351.3 167.5,351.3 135,295 167.5,238.7 232.5,238.7"
+    fill="none" stroke="#9aacb8" stroke-width="10" stroke-linejoin="round"
+  />
+
+  <!-- JOHNSON -->
+  <text
+    x="200" y="184"
+    text-anchor="middle"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="60"
+    fill="#1B5F8C"
+    letter-spacing="3"
+  >JOHNSON</text>
+
+  <!-- TILING (wider letter-spacing to match JOHNSON width) -->
+  <text
+    x="200" y="248"
+    text-anchor="middle"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="60"
+    fill="#1B5F8C"
+    letter-spacing="18"
+  >TILING</text>
+</svg>

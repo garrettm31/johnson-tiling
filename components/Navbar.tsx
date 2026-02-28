@@ -17,11 +17,11 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur border-b border-[#2a2a2a]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#c5d8e8] shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-wide">
-          <span className="text-[#c9a227]">Johnson&apos;s</span>
-          <span className="text-white"> Tiling</span>
+        <Link href="/" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.svg" alt="Johnson Tiling" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop nav */}
@@ -32,8 +32,8 @@ export default function Navbar() {
               href={href}
               className={`text-sm font-medium transition-colors ${
                 pathname === href
-                  ? 'text-[#c9a227]'
-                  : 'text-gray-400 hover:text-white'
+                  ? 'text-[#1B5F8C]'
+                  : 'text-[#3c5c72] hover:text-[#1B5F8C]'
               }`}
             >
               {label}
@@ -41,7 +41,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="ml-2 px-4 py-2 bg-[#c9a227] text-black text-sm font-semibold rounded hover:bg-[#e8c547] transition-colors"
+            className="ml-2 px-4 py-2 bg-[#1B5F8C] text-white text-sm font-semibold rounded hover:bg-[#154a6e] transition-colors"
           >
             Get a Quote
           </Link>
@@ -53,20 +53,20 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className="block w-6 h-0.5 bg-white" />
-          <span className="block w-6 h-0.5 bg-white" />
-          <span className="block w-6 h-0.5 bg-white" />
+          <span className="block w-6 h-0.5 bg-[#0c1f30]" />
+          <span className="block w-6 h-0.5 bg-[#0c1f30]" />
+          <span className="block w-6 h-0.5 bg-[#0c1f30]" />
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#111] border-t border-[#2a2a2a] px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-white border-t border-[#c5d8e8] px-4 py-4 flex flex-col gap-4">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-sm font-medium text-gray-300 hover:text-white"
+              className="text-sm font-medium text-[#3c5c72] hover:text-[#1B5F8C]"
               onClick={() => setOpen(false)}
             >
               {label}
@@ -74,7 +74,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="mt-2 px-4 py-2 bg-[#c9a227] text-black text-sm font-semibold rounded text-center"
+            className="mt-2 px-4 py-2 bg-[#1B5F8C] text-white text-sm font-semibold rounded text-center hover:bg-[#154a6e] transition-colors"
             onClick={() => setOpen(false)}
           >
             Get a Quote
